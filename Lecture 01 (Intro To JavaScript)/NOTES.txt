@@ -1,0 +1,1 @@
+avaScript is a scripting language for creating dynamic web page content. It creates elements for improving site visitors' interaction with web pages, such as dropdown menus, animated graphics, and dynamic background colors. (AND MANY MORE , WE WIL LEARN IN THIS COURSE).
