@@ -1,0 +1,20 @@
+console.log() is use to print in javascript
+VARIABLES:-
+
+To initialize variable in javascript we can use var a = 50 OR let a = 50
+NOTE: Java script can change variable type in runtime.
+EXAMPLE: 
+let a = 50
+console.log(a)
+a = "asad"
+console.log(a)
+
+Means when we initialize it will give answer 50 but when we do a="asad" it automatically changes the datatype of variable from num to character and show result asad for console.log(a)
+
+RULES FOR CHOOSING VARIABLE NAME:-
+
+1). Letters, digits, underscores & dollar($) sign allowed. 
+2). Must begin with $ or _ or letter. (can't start with numbers)
+3) JavaScript reserved words cannot be used as a variable name.
+4). Asad or aSad are different variables (javascript is a case sensitive langugae).
+
