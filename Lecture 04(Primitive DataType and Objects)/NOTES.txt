@@ -1,0 +1,13 @@
+DataTypes:-
+
+In JavaScript we have two type of datatypes one is
+
+1). Primitive DataType: In primitive dataType we have Number,Null , Boolean , BigInt , String , Symbol , Undefined. (REMEMBER THEM BY THIS NN , BB , SS U).
+
+2). Non-Primitive DataType: In Non.P.DT we have objects
+
+FINDIND THE TYPE OF INTEGER:
+console.log(typeof b)
+
+OBJECTS:-(NON PRIMTIVE DATA-TYPE)
+Objects in JS is a kind of dictionary in which we can store a specific data. eg: data of students,data of faculty,data of unique things etc.
