@@ -1,0 +1,14 @@
+QUESTIONS:
+
+Q1: Create a variable of type string and try to add a number to it.
+
+Q2: Use type of operator to find the datatype of the string in last question.
+
+Q3: Create a const object in javascript. Can you change it to hold a number later?
+
+ANS: We can't change a const or any type of object in javascript to number or any other datatype once it is defined However, it's important to note that a const variable cannot be reassigned once it has been initialized.
+If you need to change the values of the properties within the object, you can do that without reassigning the entire object.
+
+Q4: Try to add a new key to the const object in Problem 3 , were you able to do it? ANS: Yes i can able to do it, and it is possible in javascript.
+
+Q5: Writw a javascript program to create a word-meaning dictionary of 5 words.
