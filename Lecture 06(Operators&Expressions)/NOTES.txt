@@ -1,0 +1,34 @@
+OPERATORS:
+
+//ARITHMETRIC OPERATORS
+1). +
+2). -
+3). *
+4). /
+5). ** (This mean if we have a=4,b=10 then a to the power b ,, 4 power 10)
+6). % (It shows the remainder , means if we divide 20/4 it shows 0 at it shows the remainder, if we divide 22/4 it shows 2 which is the remainder).
+7) ++ post increment a++ it will first print a current value then increment, ++a it will first plus then print value.
+7) -- post increment a-- it will first print a current value then increment, --a it will first minus then print value.
+
+//ASSIGNMENT OPERATORS
+1). = it assigns a value.
+2). += (means if a+=5 it means a = a+5)
+3). -= (means if a-=5 it means a = a-5)
+4). *= (means if a*=5 it means a = a*5)
+5). -= (means if a/=5 it means a = a/5)
+6). -= (means if a**=5 it means a = a**5)
+7). -= (means if a%=5 it means a = a%5)
+
+//COMPARISON OPERATOS
+1). == (It is used to compare between values , either true of false , if a =2 b=1 , and a==b then it returns false).
+2). != (It is not equal to operator if we do a!=b then it will return true as a is not equal to b).
+3). === (It compare values but not only the values but also their dataTypes, if a =1 b="1" , a==b will return true but a===b will return false at both are same but their data types are different as b is a string).
+4). > (Greater than).
+5). < (Less than).
+6). >= (Greater than or equal to).
+7). <= (Less than or equal to).
+
+//LOGICAL OPERATORS
+&& (And operator in which both conditions must be true).
+|| (Or operator in which one condition must be true to result in true).
+! (Not operator which makes true, false and false,true).
