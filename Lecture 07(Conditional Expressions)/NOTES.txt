@@ -1,0 +1,22 @@
+PROMPT AND ALERT:-
+
+prompt is used to take input , while alert is used to tell something to user or show something to user might be a text of response.
+
+-> a = Number.parseInt(a) //use to convert string to integer
+
+CONDITIONAL STATEMENTS:-
+
+1). If: It only executes when the condition is true.
+
+2). If-else: If we want a statement for false condition to run aswell.
+
+3). If,else-if,else: It provides more conditions to run statements , you can see the code to better understand.
+
+4). Switch Statement: It works same like if , else if but there is some restrictions and also syntax is change.(follow the code)
+
+TERNARY OPERATOR:
+TERNARY OPERATOR IS A KIND OF OPERATOR WHICH IS USED TO IDENTIFY BETWEEN TRUR OR FALSE.
+It returns true or false.
+In syntax we have true first and false after that.
+Understand by this code
+(marks>10)? 'Yes' : 'No'
