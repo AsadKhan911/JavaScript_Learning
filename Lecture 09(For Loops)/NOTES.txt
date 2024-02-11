@@ -1,0 +1,36 @@
+FOR LOOP: Most frequently used loop in js.
+
+SYNTAX:-
+for (let a =0 ; a<10 ; a++)
+{
+    console.log(a)
+}
+
+1). statement 1 executed.
+2). statement 2 executed.
+3). body will run.
+4). statement 3 will executed.
+
+NOTE: "In for loop or in any loop if we initialize loop variable with let then its scope will be within its brackets. But if we use var then the scope of the variable will also be outside of the loop."
+
+FOR-IN-LOOP: This is used why we want to print the inside keys of an object. Mostly use for this purpose. It also works in arrays when we cover arrays topic.
+let obj = {
+    asad: 90,
+    khan:100,
+    ali:50,
+    shahid:48,
+}
+for(let a in obj)
+{
+    console.log("Marks of "+a+" are "+obj[a])
+}
+in this example when we initialize 'a' variable in loop , that variable will assign the keys of object to this variable and with the help of this variable we can print keys. If we write only 'a' in console.log then only the keys name will print but if we write obj.[a] then the key along with its value will print. 
+
+FOR-OF-LOOP: The for...of loop is used specifically for iterating over the values of an iterable object, such as an array, string, or other iterable data structures.
+const fruits = ['apple', 'banana', 'orange'];
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+CONCLUSION: For in loop can be used with objects aswell arrays,,and For-Of-Loop can used with arrays aswell strings.
