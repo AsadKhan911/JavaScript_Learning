@@ -1,0 +1,24 @@
+WHILE LOOP: While loops works like for loop but there is a syntax difference bw for and while loop. We can mostly do all work which we can do with while loop by for loop.
+SYNTAX:
+let n=prompt("Enter the value of n")
+n=Number.parseInt(n)
+
+let i = 0;
+while(i<n)
+{
+    console.log(i)
+    i++
+}
+
+Do-While Loop: In do while loop the statement will execute for at most one time whether the condition is true of false. As do while first executes the statement block and then checks the condition.
+SYNTAX:
+let n=prompt("Enter the value of n")
+n=Number.parseInt(n)
+
+let i = 0;
+do
+{
+    console.log(i)
+    i++
+}
+while(i<n)
