@@ -1,0 +1,20 @@
+FUNCTIONS:-
+
+Functions in javascript are nothing but a piece of code which we can resuse by just calling its name.
+Function can have any name.
+Function must be unqiue in name.
+The variables assigned to function works locally inside the function.
+
+//SIMPLE FUNCTIONS
+function OnePlusAvg(x,y)
+{
+    return 1+(x+y)/2
+}
+
+//ARROW FUNCTIONS
+const hello = ()=>
+{
+    console.log("HELLO")
+}
+
+ARROW FUNCTION is nothing but a preferable way to write functions in javascript.
