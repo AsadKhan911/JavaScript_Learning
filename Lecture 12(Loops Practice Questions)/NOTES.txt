@@ -1,0 +1,51 @@
+Q1: Write a program to print the marks of a student in an object using for loop.
+
+Solution: 
+
+let marks = {
+    'Asad': 87,
+    'Khan': 71,
+    'Adil':82,
+    'Affan':42
+}
+
+for(let i=0; i<Object.keys(marks).length; i++)
+{
+    console.log("Marks of student "+Object.keys(marks)[i]+" are "+marks[Object.keys(marks)[i]])
+}
+
+In this Object.keys(marks).length means all the keys (means Asad,Khan,Adil,Affan just these..keys basically means the values on the left side).
+After that in loop Object.keys(marks) is same just we add [i] with it means at 0 it will print Asad, at 1 it will print Khan and so on...
+After that marks[Object.keys(marks)[i] will print the values on left side. It is the method to print the values of the left side.
+
+Q2: Write the program in Q1 using for in loop.
+SOLUTION:
+let marks = {
+    'Asad': 87,
+    'Khan': 71,
+    'Adil':82,
+    'Affan':42
+}
+for(let a in marks)
+{
+    console.log("Marks of "+a+" are "+marks[a])
+}
+It print the left values with a , and right values with marks[a]...for in loop is basically designed to solve such questions.
+
+Q3: Write a program to print "try again" until the user enters the correct number.
+SOLUTION:
+console.log("CORRECT NUMBER IS 5")
+let num
+while(num!=5)
+{   
+   num = prompt("ENTER CORRECT NUMBER")
+   console.log("TRY AGAIN")
+}
+
+Q4: Write a function to find the mean of 5 numbers.
+SOLUTION:
+const mean=(a,b,c,d,e) => { //ARROW FUNCTION
+     return (a+b+c+d+e)/5
+}
+
+console.log("MEAN = "+mean(1,2,3,4,5))
