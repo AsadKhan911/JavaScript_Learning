@@ -1,0 +1,41 @@
+What is String? : It is a collection of characters.
+.length function is use to find the length of a string.
+
+In java we have 3 types of strings:-
+
+1). Double quote Strings: let name = "Asad"
+2). Single quote Strings: let name = 'Asad'
+
+In JavaScript, both single quotes (') and double quotes (") can be used to create string literals. There is no functional difference between the two in terms of creating strings. 
+
+NOTE: The string started with double quote will end also with double quotes, and with single quote will end also with single quote.
+
+let name = "Asad' //DONT DO THIS
+
+WE CAN ACCESS THE SPECIFIC WORD OF A STRING:
+
+console.log(name[0])
+console.log(name[1])
+console.log(name[2])
+console.log(name[3])
+
+//TEMPELATE LITERALS
+let sentence = `boy0 is a friend of boy1`
+console.log(sentence)
+
+If we print like this it will print as it is. But if we want to print whats inside the variables we will do like this.
+
+STRING INTERPOLATION: We can insert variables directly in the backticks(``) this is called string interpolation.
+
+ESCAPE SEQUENCE CHARACTER:
+
+\' : This escape sequence character is used when we want to print a single quote within a single quote for some reason for example Asad's so this \' will treat as a single character.
+let ESC = 'This is Asad\'s Book'
+console.log(ESC)
+
+\" : This escape sequence character is used when we want to print a double quote within a double quote for some reason for example Asad's so this \" will treat as a single character.
+let ESC = 'This is Asad\'s Book'
+console.log(ESC) 
+
+\n : This is use to print a new line.
+
