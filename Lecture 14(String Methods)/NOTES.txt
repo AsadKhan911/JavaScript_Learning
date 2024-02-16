@@ -1,0 +1,67 @@
+STRING METHODS:
+
+In strings we have properties (such as .length etc) , aswell we have methods.
+To access method we have to use () at the end of the method name , while we dont need this to use properties.
+
+1). ToUpperCase(): This method of string is used to change the string in upper case letters.
+2). ToLowerCase(): This method of string is used to change the string in lower case letters.
+3). .slice(2,4): This method is used to slice the string. Such as by indexing numbers. If we 2,4 means from 2 index till 3 index as it will print just before the last index we right.
+
+EXAMPLE : let name3= "AsadAliKhan"
+	  console.log(name3.slice(0,4))
+
+OUTPUT: Asad, as 0 is A and and 'd' is 3rd index and we write 0,4 as it will consider just before the last index.
+
+4). .slice(2): This will print from index 2 till the end.
+
+EXAMPLE : let name4= "AsadAliKhan"
+	  console.log(name4.slice(4))
+
+OUTPUT : AliKhan
+
+5). .Replace(a,b): This is used to replace one part of string to any other part what we write.(This will not work with indexing numbers)
+
+EXAMPLE: let name5= "AsadAliKhan"
+	 console.log(name5.replace("Asad","Adil"))
+
+OUTPUT: AdilAliKhan 
+
+6). .concat(): This function is use to concat(attach) strings with another string.
+
+let name6 = "Asad"
+let name6_1 = "Adil"
+EXAMPLE : console.log(name6.concat(" is a friend of " .concat(name6_1).concat("OK")))
+OUTPUT : Asad is a friend of Adil OK
+We can also write like this.
+console.log(name6," is a friend of ",name6_1,"OK")
+Output will be same.
+console.log(name6 +" is a friend of " + name6_1) (WE CAN ALSO CONCATINATE STRINGS LIKE THIS).
+
+7). .trim(): This method is used when we have extra spaces in a variable.
+
+EXAMPLE: 
+let name7 = "    Asad       "
+console.log(name7.trim())
+
+OUPUT: Asad(without spaces from start and end).
+
+QUICK QUIZ: Print a string with the help of for loop.
+SOLUTION:
+let name8 = "Asad Shehzad Khan"
+for(let i = 0; i<17; i++)
+{
+    console.log(name8[i])
+}
+
+OR if you want to print in a single line do like this.
+
+const STRING = "Asad Shehzad Khan";
+let result = "";
+
+for (let i = 0; i < STRING.length; i++) {
+  result += STRING[i];
+}
+
+console.log(result);
+
+
