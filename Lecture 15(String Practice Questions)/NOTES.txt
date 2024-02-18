@@ -1,0 +1,54 @@
+PRACTICE QUESTIONS ON STRINGS:
+
+Q1. What will be the following print in JavaScript?
+
+    console.log("asa\"".length)
+
+OUTPUT: 4
+
+Q2.Explore the includes , starts with & ends with functions of a string.
+
+SOLUTION: let senetence = "This is a cool sentence"
+let word  = "cool"
+ console.log(senetence.includes(word))
+
+First assume this solution. In it the .includes function will either return true or false on base of if the word is include in the sentence variable. In our case it will be true because the word = "cool" is in the sentence.
+
+SOLUTION 2:
+INCLUDE FUNCTION:
+let senetence = "This is a cool sentence"
+let word  = "cool"
+console.log(`The word ${word} ${senetence.includes(word) ? 'is' : 'is not'} in the sentence `)
+
+In this case ${sentence.includes(word) is for true or false. Which we use inside the ternary operator. If it returns true it will execute is in the sentence OTHERWISE it will return 'is not in the sentence'
+
+STARTS WITH FUNTION:
+let name1 = "Asad Khan"
+console.log(`The name ${name1}, ${name1.startsWith("Asad") ? 'Starts' : 'Not Starts'} With Asad`)
+
+Same method , just this function will return true or false on basis of either the string starts with the given part of string or not.
+
+ENDS WITH FUNCTION
+let name2 = "Asad Khan"
+console.log(`The name ${name2}, ${name2.endsWith("Asad") ? 'Ends' : 'Not Ends'} With Asad`)
+
+Same method , just this function will return true or false on basis of either the string ends with the given part of string or not.
+
+Q3: Write a program to convert a given string to lower case. (use .toLowerCase())
+
+Q4: Extract the amount out of this string //IMPORTANT QUESTION.
+"Please give me RS 1000" 
+
+SOLUTION: let str1 = "Please give RS 1000"
+let amount = str1.slice(15)
+console.log(amount)
+//OR
+let str2 = "Please give RS 1000"
+let amount0 = str2.slice("Please give RS ".length)
+console.log(amount0)
+
+In first solution the string will slice till 15 index. If we write (0,15) it means till 15-1 index.
+In second solution it will calculate the length of "Please give RS " and put it in the slice function which is length 15.
+
+Q5: Try to change 4th character of a given string , were you able to do it?
+ANS: Can't change because in js strings are immutable. So we cannot change or edit existing string.
