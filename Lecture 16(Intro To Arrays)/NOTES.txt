@@ -1,0 +1,29 @@
+ARRAY : 
+
+Array is a collection of items. It is used to store more than one values in a single variable. Arrays are mutable and can be changed we will se down.
+
+SYNTAX EXAMPLE: let reg_no = [1,2,3,4 , null,false,"Not Present"]
+
+This syntax example demonstrate that we can add different type of values in an array.
+
+ACCESING A SINGLE ITEM IN AN ARRAY:
+console.log(reg_no[0])
+console.log(reg_no[1])
+console.log(reg_no[2])
+console.log(reg_no[3])
+console.log(reg_no[4])
+console.log(reg_no[5])
+console.log(reg_no[6])
+
+FINDING THE LENGTH OF AN ARRAY:
+console.log(reg_no.length) //IT WILL COUNT THE ITEMS IN AN ARRAY.
+
+ADDING THE VALUE OF IN AN ARRAY: (ARRAYS ARE MUTABLE IN JS)
+reg_no[7]=5
+console.log(reg_no[7])
+
+UPDATING THE VALUE IN AN EXISTING ARRAY: (ARRAYS ARE MUTABLE IN JS)
+reg_no[1]=3
+console.log(reg_no[1])
+
+TYPE OF ARRAY: In javascript arrays are objects. The type of operator will return object.
