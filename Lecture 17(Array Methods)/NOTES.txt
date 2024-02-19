@@ -1,0 +1,26 @@
+ARRAY METHODS:-
+
+1). toString(): This method is used to convert an array to a string.
+
+2). join(): The join method join all the array elements with a seperator which we gave to the function as an argument.
+EXAMPLE:
+let arr = [1 , 2 , 3 , 4]
+let newarr1 = arr.join("-")
+console.log(newarr1)
+console.log(typeof newarr1)
+
+OUTPUT: 1-2-3-4
+TYPE = STRING //As it also converts the type of an array to a string.
+
+3). pop(): This method is used to pop out the last element from an array. //if we want to know what pop function returns, so the it returns the element which is popped. (means the last element).
+
+4). push(): It adds the new element at the end of the existing array and returns the new array length.
+ let r = arr.push(5) //push returns new the array length.
+console.log(arr , r)
+OR we can push more than one elements once.
+ let r = arr.push(5,6,7) //push returns the new array length.
+console.log(arr , r)
+
+5). shift(): This method removes the first element from an array and returns the first element which is removed.
+
+6). unshift() : This method is used to Inserts new elements at the start of an array, and returns the new length of the array.
