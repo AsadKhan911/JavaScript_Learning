@@ -1,0 +1,66 @@
+ARRAY METHODS (CONTINUED) :-
+
+7). delete: This is a property not a method. This is used to delete an index from an array. 
+INTERVIEW QUESTION: When we use delete operator it deletes the elements but it reserves the space for that element.
+So the length of the array will be same even if we delete an element by using delete property.
+
+8) Concat(): This method is used to join two or more than two arrays , and returns a joined array which we concat. Also the arrays which we joined will not get affected ( means orignal arrays will not be affected.)
+
+SYNTAX: let newarr = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ]
+let newarr1 = [10 , 22 , 23 , 34 , 45 , 56 , 67 , 78 ]
+	    let c = newarr.concat(newarr1)
+
+More than one array : let c = newarr.concat(newarr1,newarr2,newarr3) etc
+
+9). Sort(): This function is used to sort an array alphabetically.
+
+IMP INTERVIEW QUESTION: It sort not on the basis of ascending or descending order. But it solves alphabetically means 1 se start hone wale sare phele ayenge whether it is 1 or 1000 , then 2 se start hone wale ayengy then 3 se and so on...
+
+let arr_sort = [100 , 22 , 29 , 19 , 500 , 56 , 87 , 1118 ]
+arr_sort.sort()
+OUTPUT: [100, 1118, 19, 22, 29, 500, 56, 87] (AS WE CAN SEE IT SORT ALPHABETICALLY).
+
+IMP NOTE: It changes the orignal array. orignal array will be affected if we use sort() function.
+
+10). sort compare function(): If we want values to print in ascending or descending order , we will use compare function. Which we have to made by ourself. And it is easy to make.
+
+For ascending order:
+let compare = ( a , b) => //for ascending order.
+{
+    return a - b
+}
+For descending order:
+let compare_Descending = ( a , b) => //for descending order.
+{
+    return b - a
+}
+
+11). Reverse(): This method is used to reverse an array.
+
+IMPORTANT FUNCTIONS:
+
+12). SPLICE FUNCTION(): This function is use to delete items from an array, added new items in place of the deleted once + more.
+ARGUMENTS: This function take 3 arguments.
+1). From which index you want to delete items such as index 2.
+2). How much values you want to delete from that given index such as 3.
+3). What items you want to add in place of those elements you deleted.
+
+arr = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ]
+let sa = arr.splice(2 , 3 , 30 , 40 , 50)
+console.log("spliced array = ",arr) 
+console.log(sa) 
+
+OUTPUT: spliced array = [1,2,30,40,50,6,7,8] //modified array. changes the orignal array.
+[3,4,5] //returns the deleted items array.
+
+WE CAN ALSO ADD MORE THAN ELEMENTS WE DELETED. Like if we delete 3 items starts from index 2 , It is not must that if we delete 3 items we must add 3 , we can add more than 3 but note this that only the number of items write to delete will delete in this case 3 items will delete and added how much are given.
+
+13). SLICE FUNCTION(): This function is used to make a separate array on the basis of given index such as from index 2 to index 4 , so it makes a sperate array from original array from 2-4 index and returns it.
+
+IMP NOTE: It doesnot modify the orignal array. So we have to make a seperate variable for it and put it in it.
+SYNTAX: arr = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ]
+let s_arr = arr.slice(2) //index 2 to onwards end..no ending index given in this case.
+console.log(s_arr)
+
+let s_ending_arr = arr.slice(2,5) //index 2 to n-1 index. Means print till 4th index.
+console.log(s_ending_arr)
