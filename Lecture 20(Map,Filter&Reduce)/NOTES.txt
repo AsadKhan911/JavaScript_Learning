@@ -1,0 +1,71 @@
+MAP , FILTER , REDUCE: (HIGHER ORDER ARRAY METHODS)(MODERN JAVASCRIPT METHODS)
+
+1). MAP(): This function used when we want to create a new array from an existing array,and for each is used when we want to perform operation on an array elements of the existing array. (Do not modify the existing array).
+
+EXAMPLE : let arr = [11,32,42,98]
+let a = arr.map((value) =>
+{
+    console.log(value)
+    return value + 1
+})
+console.log(a)
+
+In this example we take array , and in variable 'a' we put that array with map function and bound that map in a function and give an argument value.
+Inside this function first we use console.log(value) , which will simply print the elements of an existing array just like for--of--loop or for each loop does.
+After that we return value + 1 , means add 1 in each value of the existing array and returns a new array.
+And at the end outside the function we print the 'a' variable in which the whole function is and what it returns will be output in 'a'.
+
+-> We can also give two arguments to map function first is for values of an array , and second is for index numbers, it will print both
+
+let a = arr.map((value , index) =>
+{
+    console.log(value , index)
+})
+
+-> We can also give three arguments to map function first is for values of an array , and second is for index numbers,and third is for whole array it will print all.
+let arr = [11,32,42,98] //WE CAN ALSO DO THE SAMETHING WITH FOR EACH LOOP ASWELL.
+let a = arr.map((value , index , array) =>
+{
+    console.log(value , index , array)
+    return value + 1
+})
+OUTPUT: 11 0  [11, 32, 42, 98]
+	32 1  [11, 32, 42, 98]
+	42 2  [11, 32, 42, 98]
+	98 3  [11, 32, 42, 98]
+
+2). FILTER METHOD: This method is used to filter the items in an array , and print the filtered items on the basis of certain condition. (Do not modify the existing array).
+
+EXAMPLE : let arr1= [1,2,4,8,98,77,66,110,11,18,17,20,144]
+let a2 = arr1.filter((a)=>{
+    return a<20
+})
+console.log("filtered array = ",a2)
+
+OUPUT : filtered array = [1, 2, 4, 8, 11, 18, 17]
+
+3). REDUCE METHOD(): This function is used to make a sum of array elements in such a way. It is a callback function:-
+CALLBACK FUNCTION: A callback function in programming refers to a function that is passed as an argument to another function
+
+EG: We have array , arr = [1,2,3,4,5]
+First it will take 1 and 2 as h1 and h2 and adds them answer will be 3 now the answer 3 will be considered as h1 the third element of array 3 is considered as h2 and now it will add 3+3 =6 now 6 is h1 and 4 is h2 which is 10, now 10 is h1 and 5 is h2 which is 15. So the output will be 15.
+
+SYNTAX: let arr3 = [1, 2 , 3 , 4 , 5]
+let newarr3 = arr3.reduce((h1 , h2)=>{
+    return h1 + h2
+})
+console.log(newarr3)
+Here we make a function with reduce function
+
+//OR
+
+Here we make a sperate function for adding to elements h1+h2 and pass this function to .reduce() method as an argument. Both will work same.
+let arr4 = [1, 2 , 3 , 4 , 5]
+const reduce_func =(h1 , h2) => 
+{
+    return h1 + h2
+}
+let newarr4 = arr4.reduce(reduce_func)
+console.log(newarr4)
+
+
