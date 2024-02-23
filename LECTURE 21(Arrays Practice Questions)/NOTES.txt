@@ -1,0 +1,11 @@
+PRACTICE QUESTIONS:
+
+Q1. Create an array of numbers and take input from the user to add numbers to the array.
+
+Q2. Keep adding numbers to the array in Q1 until 0 is added to the array.
+
+Q3. Filter for numbers divisble by 10 from a given array.
+
+Q4. Create an array of square of given numbers.
+
+Q5. Use reduce to calculate factorial of a given number from an array of first n natural numbers , (n being the number whose factorial needs to be calculated).
