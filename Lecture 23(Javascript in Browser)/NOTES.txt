@@ -1,0 +1,9 @@
+JavaScript in Browser:
+
+Developer Tools: In chrome we have a developer tool , which can be appear by right clicking and then click on inspect.
+Items in Developer Tools:-
+
+1). Elements: Here we can see every element , such as div,heading,etc. It redirects us to the particular element when we move cursor to that element.
+2). Console: In console we have all errors and warnings. Also messages such as console.log messages.
+3). Network: In network tab we have all the network requests showing.
+4). Lighthouse: It generates a report and tells how much fast our website is performing.
