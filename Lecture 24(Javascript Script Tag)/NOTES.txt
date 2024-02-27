@@ -1,0 +1,29 @@
+SCRIPT TAG: To write javascript in browser , we use script tag to use it.
+
+There are 2 Methods to link javaScript script tag:
+
+1). Link at the end of the HTML body tag just before closing the body tag.
+<body>
+    HELLO
+    <script src="tut24.js"></script>
+</body>
+
+2). Write javaScript inside the html body , which can be done by writting java script in script tag. You can say inline javascript. (Most prefered).
+
+<body>
+    HELLO
+    <script>
+        alert("HELLO")
+    </script>
+</body> 
+
+Advantages of using method number 2:
+
+1). Seperation of concerns(Means different javaScript file can work in different tasks , such as button handling, music play etc).
+2). Browser Caching. (It reduces our caching size , by loading all files at once and saves them , and dont loads all files again when the page gets reload.
+
+NOTE: If user tried to do this:-
+
+<script src="tut24.js">
+	console.log("HELLO I AM ASAD") //Javascript will ignore this inside javascript , and only run the linked file javascript.
+</script>
