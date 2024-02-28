@@ -1,0 +1,28 @@
+CONSOLE OBJECTS:
+
+1). Console.log() -> Used to print anything
+
+Interview based question: What console.object returns if we type console.object("anything")
+OUTPUT:anything , RETURNS: undefined.
+
+2). Console.error("this is an error") -> Used to print error message on the console.
+
+3). Console.assert() ->  used for debugging purposes. It checks if a specified expression is true, and if it is not true, it logs an error message to the console. If the expression is true, nothing happens.
+
+4). Console.clear() -> Used to clear the console.
+
+5). Console.table() -> It is used to print object in a table form.
+
+6). Console.warn() -> Used to print warning on the console.
+
+7). Console.info() -> Similar like console.log() used to print message on console.
+REMEMBER: All console.log and console.info messages will go in INFO SECTION of the console.
+
+8). Console.time(), Console.timeEnd() -> Used to check how much time a particular process take between start to end.
+console.time("forLoop")
+for(let i =0;i<=5;i++)
+{
+    console.log("a")
+}
+console.timeEnd("forLoop")
+You can put any name in time(),and timeEnd() , just remeber both names should be same.
