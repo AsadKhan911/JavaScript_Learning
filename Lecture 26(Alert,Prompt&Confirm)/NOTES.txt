@@ -1,0 +1,13 @@
+1). ALERT(): It is used to display message on the screen. Used to invoke mini-window.
+
+2). PROMPT(): It is used to enter value in the mini window.
+
+NOTE: You can also give prompt and optional default value, for this you have to give two parameters to prompt function
+ONE IS-> The message or text
+SECOND IS-> The default value. (You can either enter the default value, or reset to their own value). (DONE IN THE CODE FILE).
+
+3). Document.write(): If you want to write the value on the screen , which you enter in the mini-window, use this.
+
+4). CONFIRM(): It is used as identified by its name, when we want to ask something sensitive action from the user , such as , are you sure you want to delete it , etc.
+
+RECOMMANDATION : You can use these js methods in admin panels , but for user panel try to use MODALS in js. That gives users a good experience.
