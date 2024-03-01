@@ -1,0 +1,19 @@
+WINDOW? What is it?
+
+Basically in JavaScript we have an object named Window, 
+-> Window is a global variable
+-> And inside window there are 3 different objects which are DOM,BOM &JavaScript Core
+
+DOM(Document Object Model): Poray html page ko aik javascript object bana k usko document naam dediya gaya he.
+
+-> To access this we can type window.document , and in our browser console we can see the document object.
+
+-> We can also change css properties in javascript eg: document.body.style.background = "pink"
+
+WHY WE WANT TO CHANGE IN JAVASCRIPT RATHER THAN TO DONE IT IN CSS?: We want this because , suppose we make a interface, where we are saying type any color so that color will adapted by this screen , and user write red and the body colors gets red. This will only be done by using or changing css in javascript, rather than in style sheet.
+
+BOM(Browser Object Model): The BOM represents additional objects provided by the borwser(host enviroment), for working with everything except the document.
+
+The functions alert/confirm/prompt are also a part of the BOM.
+
++ location.href="www.facebook.com"
