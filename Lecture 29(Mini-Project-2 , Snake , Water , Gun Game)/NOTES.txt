@@ -1,0 +1,55 @@
+Q. Use JavaScript to create a game of Snake , Water & Gun. The game should ask you to enter Snake , Water Or Gun. The computer should be able to randomly generate Sanke , Water Or Gun and declare win or lose using alert. Use confirm and prompt whenever required.
+
+LOSE OR WIN SCENARIO:
+
+1). Gun kills the snake : If user makes gun and program make snake USER WINS! , If user makes snake and program make gun USER LOSE!
+
+2). Water sink the gun :  If user makes Water and program make Gun USER WINS! , If user makes Gun and program make Water USER LOSE!
+
+3). Snake drinks the water : If user makes Sanke and program make Water USER WINS! , If user makes Water and program make Sanke USER LOSE!
+
+Try to run this program 5 time , and whoever gets more points will be the WINNER!
+
+
+function getRandomChoice() {
+  const choices = ["snake", "water", "gun"];
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+}
+
+const randomChoice = getRandomChoice();
+
+console.log(randomChoice);  // Output will be one of: "snake", "water", or "gun"
+
+<div class="header container-fluid d-flex justify-content-around">
+      <div class="d-flex justify-content-around">
+        <form action="">
+          <select class="btn text-white" name="" id="">
+            <option value="">English</option>
+            <option value="">Germany</option>
+            <option value="">Spanish</option>
+          </select>
+        </form>
+        <ul class="d-flex gap-3 align-items-center list-unstyled">
+          <li>
+            <a class="text-white text-decoration-none" href="">
+              <i class="fa-solid fa-phone"></i>+9530123654896</a
+            >
+          </li>
+          <li>
+            <a class="text-white text-decoration-none" href=""
+              ><i class="fa-solid fa-envelope"></i>SUPPORT@COLORLIB.COM</a
+            >
+          </li>
+           <li class="h-100 "> 
+            <!-- <a href="" -->
+              ><button
+                class="appointBTN btn bg-info rounded-0 text-white text-decoration-none"
+              >
+                APPOINTMENT
+              </button><!--</a
+            > -->
+          </li>
+        </ul>
+      </div>
+    </div>
