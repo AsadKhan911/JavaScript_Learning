@@ -1,0 +1,51 @@
+DOM MANIPULATION: DOM manipulation refers to the process of changing or updating the content, structure, or style of a webpage using JavaScript. DOM stands for Document Object Model, which is a programming interface that represents the structure of a document as a tree of objects. Each element in an HTML document, such as paragraphs, headings, and images, is represented as an object in the DOM.
+
+DOM TREE: The DOM tree, or Document Object Model tree, is a hierarchical structure that represents the structure of an HTML or XML document in a way that can be manipulated using programming languages like JavaScript. In easy words, you can think of it as a tree-like structure where each element in a document is a node, and these nodes are organized in a parent-child relationship.
+
+DOM TREE referes to the html oage where all the nodes are objects. There can be 3 main types of nodes in the DOM TREE:
+1). Text nodes.
+2). Element nodes.
+3). Comment nodes.
+
+IMP INTERVIEW QUESTION: A text node is always a leaf node of the tree.(Because we can't put anything in the tree).
+
+AUTO-CORRECTION: Suppose in html we make a span and we put span tag like this <span>Hello world</div> , Like we open with span and close with div tag , this means its not a valid html , but when we do such mistakes browser will AUTO CORRECT this mistake and clos the span tag by itself in browser like this <span>Hello world</span>
+OR
+If we write something outside the body it will put automatically it into inside the body.
+Another example is <table> tag which must contain <tbody>
+
+WALKING THE DOM: Walking the DOM" refers to the process of moving through the Document Object Model (DOM) tree and interacting with its elements using programming code, often with languages like JavaScript.
+
+A typical HTML Page looks like this:
+<html>
+<head>
+<title>hello</title>
+</head>
+<body>
+</body>
+</html>
+
+How to access these tags in JavaScript using DOM manipulation:
+
+DOCUMENT: Document has childrens such as  html,head,body,title etc. We can access them like this:(HERE WE ARE TALKING ABOUT WHOLE HTML DOCUMENT)
+
+1). document.body = It will access us to the html body
+2). document.head = It will access us to the html head
+3). document.documentElement = It will access us to the html tag (WHOLE HTML INCLDUIND BODY AND HEAD)
+
+NOTE: document.body can sometimes be null if the javascript is written before the body tag.(Because it is before body , so obviously it will return null,thats why we write javascript at the end of the body).
+
+TYPES OF EACH(FOR INTERVIEW):
+
+1). typeof document.body
+    'object'
+
+2). typeof document.head
+    'object'
+
+3). typeof document.documentElement
+    'object'
+
+4). typeof document.title (REMEMBER TITLE WILL RETURN STRING NOT OBJECT)
+    'string'	
+
