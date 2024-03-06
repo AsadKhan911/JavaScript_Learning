@@ -1,0 +1,45 @@
+Children of an element: Any thing inside the opening and closing bracket of a particular tag is the children of that tag.
+
+HEAD AND BODY ARE THE CHILDREN OF HTML TAG AND HEAD AND BODY ARE SIBBLINGS OF EACH OTHER.
+
+DESCENDENT NODES: In the context of HTML, descendant nodes refer to elements that are nested inside other elements. Let's consider a simple HTML example:<!DOCTYPE html>
+<html>
+<head>
+    <title>Descendant Nodes Example</title>
+</head>
+<body>
+
+<div id="parent">
+    <p>This is a parent element.</p>
+    <div>
+        <span>This is a descendant element.</span>
+    </div>
+</div>
+
+</body>
+</html>
+The <div> with the id "parent" is a parent element.
+Inside the parent <div>, there is a <p> element and another <div> element.
+The <p> element and the second <div> element are descendant nodes of the parent <div>.
+Inside the second <div>, there is a <span> element, making the <span> a descendant node of both the parent <div> and the second <div>.
+So, in HTML, descendant nodes are elements that are nested inside other elements. The hierarchy is determined by the nesting structure in the HTML document.
+
+ACCESSING THE CHILDRENS OF DOM:
+
+1). First Child: console.log(document.body.firstChild) //if writing in browser just write document.body.firstChild
+2). Last Child: console.log(document.body.lastChild) //if writing in browser just write document.body.lastChild
+3). All Childs: console.log(document.body.childNodes) //if writing in browser just write document.body.childNodes
+4). document.body.hasChidldNodes(): This will return true if there are child nodes exists otherwise it will return false.
+
+//CONVERTING child nodes into array
+let arr = Array.from(document.body.childNodes)
+console.log(arr)
+
+
+FOLLOWING IS ALWAYS TRUE:
+
+-> document.body.childNodes[0] === document.body.firstChild (all child nodes first element of directly target the first element are obviously equal)
+-> document.body.[document.body.childNodes.length - 1] === document.body.lastChild //as index starts from 0 thats why -1 to access the last child.
+
+
+
