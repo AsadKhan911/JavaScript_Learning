@@ -1,0 +1,49 @@
+DOM COLLECTION PROPERTIES:
+
+What is $0 in console with an Element? : Jis b element pr apka cursor navigate kr rha hoga in element at point of time in browser us element ko refer krne k lia we use $0.
+
+What is $0 in console with an Element? : $0 se jo phele select kia hoga usko refer krne k lia we use $1
+
+1). They are READ ONLY: Means if we do $0 = $1 to reference zaroor change hojaega but element wahi ka wahi rhea..
+
+2). They are live, element.childNodes variable (refrence) will automatically update if childNodes of element is change.
+
+3). They are iterable using FOR OF LOOP.
+
+SIBLING AND PARENT:
+
+-> Siblings are nodes that are children of same parents.
+
+-> head and body are the siblings of each other and their parent is html.
+
+-> <body> is said to be the "next" or "right" sibling of <head> , <head> is said to be the "previous" or "left" sibling of <body>
+
+MEANS: next ko ham right sibling kahengy or previous ko ham left sibling kahengy kisi bhe element k next , previous ki bat horahi h.
+
+When we make tree structure of html code this concept is very useful at that time as well.
+
+-> The next sibling is in nextSibling property and the previous one is in previousSibling property.
+
+-> The parent is available as parentNode
+
+Difference bw .parentNode & .parentElement:
+
+console.log(a.parentNode): This property returns the parent node of the current node, which can be any type of node (not just elements).
+It includes nodes like text nodes, comment nodes, etc., not just element nodes.
+If the current node doesn't have a parent, it returns null
+
+console.log(a.parentElement): This property returns the parent element specifically, which means it only considers actual HTML elements as parents.
+If the current node is not an element (e.g., it's a text node or comment node), it will climb up the DOM tree until it finds an element.
+
+EXAMPLE: document.documentElement.parentNode //document  , as it is not valid html element but an element so it will return document , all elements are nodes.
+	 document.documentElement.parentElement //null , as document is not a valid html element.
+
+YOU CAN REMEMBER IT LIKE THIS: 
+.parentNode will return anything whether it is valid html or not
+.parentElement will not return if it is not a valid html.
+NODE ALL , ELEMENT SOME ;)
+
+document.documentElement is a property in JavaScript that refers to the root element of the HTML document. In an HTML document, the root element is usually the <html> element.
+
+REMEMBER: All HTML elements are considered as nodes , but not all nodes are considerd as elements. nodes are only valid html tags or anything which is valid in html.
+
