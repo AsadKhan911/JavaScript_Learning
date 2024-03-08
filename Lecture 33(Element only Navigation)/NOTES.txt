@@ -1,0 +1,34 @@
+DIFFERENCE BETWEEN CHILD OR ELEMENT CHILD:-
+
+Suppose in previous lectures when we were try to accessing the children of a particualar element and if there is a space or the next element is in the next line it prints the first child as text. 
+
+EG: </head>
+<body>
+    <nav>
+      
+    </nav>
+    <script src="tut33.js"></script>
+</body>
+
+Now , if we do document.body.firstChild , it will return us text instead of <nav> , because the nav is in next line and before it there is a space because of the nav is in the next line of the body.(This is because only doc.body.firstchild returns node.
+
+But if we want to get rid of this problem and wheteher the nav is in next line or there are multiple spaces between nav and body , but still it will return first child as nav. 
+
+-> For that we use ELEMENT CHILD. 
+
+EG: <body>
+    <nav>
+      
+    </nav>
+    <script src="tut33.js"></script>
+</body>
+
+document.body.firstElementChil , now it will return <nav> (THIS IS KNOWN AS ELEMENT ONLY NAVIGATION). (it returns element).
+
+WE CAN ACCESS ANY SIBLING LIKE THIS: 
+document.body.previousElementSibling
+document.body.nextElementSibling
+document.body.firstElementSibling
+document.body.lastElementSibling
+
+HOW TO MAKE FUNCTION USING THESE TO CHANGE THE COLOR OF ELEMENTS IN JS USING USER PREFERENCE, YOU CAN CHECK THE CODE FILE.
