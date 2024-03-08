@@ -1,0 +1,21 @@
+TABLE NAVIGATION:
+
+Just like we have different DOM Manipulation methods to access first child , to nth child or parents etc.
+
+-> We have also some seperate properties for the table aswell. While working on table in DOM we can use these properties.
+
+-> Consider 't' as a table
+
+1). t.rows (To get all the rows of the table).
+2). t.tHead (To get tHead of the table).
+3). tFoot (To get tFoot of the table).
+4). t.tBodies (to access tBody of the table).
+5). tbody.rows (access collection of <tr> inside)
+6). tr.cells (to access collection of td and th)
+7). tr.sectionRowIndex( tr.section[0] like this)..(access index of tr inside enclosing element)
+8). tr.rowInside (access Row number starting form 0)
+9). td.cellIndex( td.cell[0],td.cell[1] etc like this)...(access no of cells inside encloisng <tr>)
+
+QUICK QUIZ: Print type of window and type of document in the console & see what it print.
+
+ANSWER: Both type is object. Type of document is an object , Type of window is an object.
