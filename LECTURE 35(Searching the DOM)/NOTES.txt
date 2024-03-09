@@ -1,0 +1,42 @@
+SEARCHING THE DOM: (IMPORTANT TOPIC)
+
+FIRST OF ALL REMEMBER THIS BEFORE GOING FURTHER:
+
+The method with ELEMENTS 'S' IN IT WILL RETURN ALL ELEMENTS , WHILE the method with ELEMENT without 'S' with return only a Single Element.
+
+1). getElementsByClassName(): While in DOM Suppose we want to change the color of a particluar element in html , we write such code for this to get to that particluar element. eg: let title = document.body.firstElementChild.nextElementSibling.firstElementChild.nextElementSibling.firstChild
+	     title.style.color = 'red'
+
+But searching the dom makes it easy for us we can just access the element by its class name such as.
+
+FIRST OF ALL READ THIS: In JavaScript, getElementsByClassName returns a collection of elements with the specified class name, not just a single element. Even if there is only one element with the given class, it's still returned as a collection (NodeList), and you need to access the specific element within that collection.
+
+let title = document.getElementsByClassName("card-title")[0]
+title.style.color = "red"
+
+Now , when we write this code , it will convert color to red of title inside the class=card-title , we use [0] because we want access only the first element node.
+
+2). getElementById(): getElementById: Returns a single HTML element or null if no matching element is found. It will not reutrn a node list , instead it will return directly a single html element. So we dont need to write index number in it. It will work when html page contains unqiue id's, thats why we always give unique ids to elements. 
+
+-> Suppose if we have multiple elements with same id , then getElementById() will only return the very first element in the html page with that id.
+
+EG: let title = document.getElementById("title-card")
+// title.style.color = "blue"
+
+As we can see here we done previous example with the same code , but here we dont need to put index number as it returns only one html element.
+
+3). querySelectorAll(): This work similar just like getClass or getId the difference is it take class name or id name as a selector we use to write in CSS , such as class with '.' and id with '#' 
+
+EG: let title = document.querySelectorAll(".card-title") //it will give all the classes named with card-title
+    title[0].style.color = "red"
+    title[1].style.color = "yellow" 
+    title[2].style.color = "blue"
+
+4). querySelector(): Just like querySelectorAll returns all the elements with the given selector , but querySelector() will only return the first element of that selector name , whether there are many other elements exists with same selector , but it will only returns the first one. (CHECK CODE FOR EXAMPLE).
+
+5). getElementByTagName(): This is used when we want to search by a specific tag name such as "p" for paragraph , "a" for anchor tag etc.
+
+EG : -> console.log(document.getElementsByTagName("a")) //it will return the all element of anchor tag (a-tag)
+     -> console.log(document.querySelector(".card").getElementsByTagName("a")) //it will return anchor tag of inside the card class
+
+6). getElementsByName():console.log(document.getElementsByName("search")) //it will return according to what is in name attribute such as <input name=search> etc
