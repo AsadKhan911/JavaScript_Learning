@@ -1,0 +1,62 @@
+matches , closest & contains method:-
+
+There are 3 important methods to search the DOM
+
+1). elem.matches(CSS Selector): In JavaScript, the .matches function is used to check if an element matches a specified CSS selector. It returns a boolean value, true if the element matches the selector, and false if it doesn't.
+
+Here's a simple explanation:
+
+Imagine you have an HTML element, like a <div>, and you want to know if it has a specific class or matches a particular description. You can use the .matches function to check if the element meets the criteria you've set in a CSS selector.
+
+For example:
+<div id="myElement" class="example-class">Hello, world!</div>
+
+// Get the element
+const myElement = document.getElementById('myElement');
+
+// Check if it has the class "example-class"
+const doesItMatch = myElement.matches('.example-class');
+
+// Log the result
+console.log(doesItMatch);  // Output: true
+
+In this example, doesItMatch will be true because the myElement has the class "example-class." If the element didn't have that class, it would be false.
+
+ One real-life example where you might use the .matches() method is in handling events on a webpage. We will see in furture lectures.
+
+2). elem.closest(CSS Selector): To look for the nearest ancestor that matches the given CSS selector. The elem itself is also checked.
+
+In JavaScript, the .closest() method is used to find the closest ancestor (parent, grandparent, etc.) of an element that matches a specified CSS selector.
+It will find in parent or grandparent nodes means only in nodes inside the nodes it will check and it will start from its self means us id se start krega jo given hogi then next k ps jaega etc.
+
+Here's a simple explanation:
+
+Imagine you have an HTML structure with nested elements, and you want to find the closest ancestor element that has a specific class or matches a certain description. The .closest() method helps you do that.
+
+For example:
+
+<div class="container">
+    <div class="box">
+        <p id="target">This is the target element.</p>
+    </div>
+</div>
+
+// Get the target element
+const targetElement = document.getElementById('target');
+
+// Find the closest ancestor with the class "container"
+const container = targetElement.closest('.container');
+
+// Log the result
+console.log(container);  // Output: <div class="container"> ... </div>
+
+
+In this example, .closest('.container') looks for the closest ancestor of the targetElement that has the class "container." It goes up the DOM hierarchy until it finds an element that matches the specified selector.
+
+The .closest() method is helpful when you need to traverse up the DOM tree to find a specific ancestor element based on its class or other characteristics.
+
+3). elemA.contains(elemB): It returns true if elemB is inside elemA (a descendant of elemA) or when elemA == elemB
+
+EXAMPLE : console.log(id.contains(spanid)) //return true as spanid is inside id1
+	  console.log(spanid.contains(spanid)) //for this it will return true as well.
+

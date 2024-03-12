@@ -1,0 +1,19 @@
+QUESTIONS:
+
+Q1: Create a navbar and change the colod of its first element to red.
+
+Q2: Create a table without tbody , Now use "view page source" button to check whether it has a tbody or not.
+
+ANSWER: No! As view page source is a raw form of what we write in our HTML file , but in inspect element there is a <tbody> auto correct because it show what is correct , as <tobdy> is essential for a table so inspect element will show it.
+
+Q3: Create an element with 3 children , Now change the color of first and last element to green.
+
+Q4: Write a javascript code to change background of all <li> tags to cyan.
+
+Q5: Which of the following is used to look for the farthest ancestor that matches a given css selector.
+
+a). matches b). closest c). contains d). none of these
+
+ANSWER: The correct answer is: d). none of these
+
+CONFUSION ABOUT CLOSEST: The closest method is used to look for the closest ancestor not farthest that matches a given CSS selector.
