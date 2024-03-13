@@ -1,0 +1,65 @@
+DIFFERENCE BW console.log() & console.dir():
+
+The main differnce bw both is when we use console.log() it just simply print that line of code in html.
+When we use console.dir() it print that line of code like js object which contains all the properties of that object.
+
+EXAMPLE : 
+
+console.log(document.getElementsByTagName("span")[0])
+ <span>Hey I am span</span>
+
+console.dir(document.getElementsByTagName("span")[0])
+OUTPUT: -> span as an object
+
+Differnce bw TAGNAME VS NODENAME:
+
+document.body.firstChild.nodeName
+'#text' //it will return node name such as(text,comment etc)
+document.body.firstElementChild.nodeName
+'SPAN' //it will return element nodes name.
+
+INNER HTML: Anything written in the particular HTML element is inner HTML. The innerHTML property allows to get the HTML inside the element as a string. (VALID FOR ONLY ELEMENT NODES).
+
+-> We can access it using first.innerHTML (where first is the id of span element we access) or accessing it by $0 or by DOM methods
+
+EXAMPLE: first.innerHTML
+OUTPUT:  'Hey I am span'
+
+-> We can also change the innerHTML of a particular element
+
+EXAMPLE : 
+
+first.innerHTML = "HEY I AMMMMM" /It will change the inner html to this of element with id first.
+
+OUTER HTML: outerHTML is a property that represents the entire HTML content of an element, including the element's own opening and closing tags.
+When you access or modify the outerHTML property, you are dealing with the entire HTML representation of the element.
+
+EXAMPLE: first.outerHTML
+OUTPUT:  '<span id="first">HEY I AMMMMM</span>'
+
+-> We can also change the outerHTML of a particular element
+
+EXAMPLE: first.outerHTML = '<div>HELLO</div>'
+
+IT WILL CONVERT SPAN WITH ID = first TO HELLO INSIDE DIV
+
+FOR TEXT NODES AND COMMENT WE USE .data and .nodeValue: (CHECK HTML DOC FOR THE VALUES OF HTML)
+document.body.firstChild.data
+'\n    hello\n    '
+document.body.firstChild.nodeValue
+'\n    hello\n    '
+
+TEXT CONTENT: This property copies the text of the entire element we gave to it. If we give body to it , it will give the entire text of the whole body to us.
+
+EXAMPLE: document.body.textContent
+
+HIDDEN PROPERTY: This property is used to hide any element in HTML.
+
+EXAMPLE: <span id="first" hidden>Hey I am span</span> //Now it will hide this span in the Document
+
+-> We can also access this element in console if it is hidden. By making it its value to false.
+
+EXAMPLE: console.log(first.hidden = false) //Now the console will show the hidden element. We can use this while making websites where we want to show a particular element in some conditions , so there we will make its value to false.
+
+
+
