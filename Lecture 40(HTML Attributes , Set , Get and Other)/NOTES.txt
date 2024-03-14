@@ -1,0 +1,84 @@
+HTML ATTRIBUTE METHODS:
+
+1). .getAttribute(): In JavaScript, the .getAttribute() method is used to retrieve the value of the specified attribute of an HTML element. Attribute can be class id , name etc. So when we want any attribute of a particular element we will use this method.
+
+EXAMPLE: HTML:-
+
+ <div id="first" class="one">
+    HELLO I am div!
+   </div>
+
+JS :
+let first = document.getElementById("first")
+let a = first.getAttribute("class")
+console.log(a)
+
+OUTPUT: one
+
+2). .hasAttribute(): The .hasAttribute() method in JavaScript is used to check whether a specified attribute exists on an element. It returns a boolean value, true if the attribute exists, and false if it does not.
+
+EXAMPLE: HTML:-
+
+ <div id="first" class="one">
+    HELLO I am div!
+   </div>
+
+JS:
+let first = document.getElementById("first")
+let b = first.hasAttribute("class")
+console.log(b)
+
+let first = document.getElementById("first")
+b = first.hasAttribute("id")
+console.log(b)
+
+OUTPUT: true
+	true //as html attribute has both id aswell class.
+
+3). .setAttribute(): The .setAttribute() method in JavaScript is used to set the value of a specified attribute on an HTML element. It allows you to dynamically change or add attributes to an element in the DOM (Document Object Model). You can update existing attributes or add new attributes in the HTML element.
+
+EXAMPLE: HTML: 
+<div id="first" class="one">
+    HELLO I am div!
+   </div>
+JS:
+let first = document.getElementById("first")
+first.setAttribute("class" , "two")
+
+now the id of div is set to 'two' from 'one'
+
+4). .removeAttribute(): The .removeAttribute() method in JavaScript is used to remove a specified attribute from an HTML element. It allows you to dynamically remove attributes from elements in the DOM (Document Object Model).
+EXAMPLE: HTML:
+<div id="first" class="one">
+    HELLO I am div!
+   </div>
+JS:
+let first = document.getElementById("first")
+first.removeAttribute("class")
+
+OUTPUT: It will remove the attribute class from the HTML , DOM(Document Object Model).
+
+5). .attributes(): If you want to access all the attributes of a particular element you can use this.
+EAMPLE: console.log(first.attributes)
+OUTPUT: amedNodeMap {0: id, 1: class, id: id, class: class, length: 2}
+
+6). CUSTOM ATTRIBUTES: Custom attributes, in the context of HTML and JavaScript, refer to attributes that are not part of the standard HTML specification but are added by developers to store additional information on HTML elements. These attributes are typically prefixed with "data-" to adhere to a consistent naming convention. Custom attributes provide a way to associate extra data with HTML elements without affecting their default behavior or rendering.
+
+EXAMPLE: HTML:
+  <div id="first" class="one" data-my-name = "asad" data-last-name ="khan">
+    HELLO I am div!
+   </div>
+JS:
+let first = document.getElementById("first")
+console.log(first.dataset)
+
+In JavaScript, when accessing the dataset property to retrieve values from data attributes, you should use camelCase for attribute names. The dataset property automatically converts hyphenated attribute names to camelCase.
+
+EXAMPLE: console.log(first.dataset.myName)
+console.log(first.dataset.lastName)
+
+OUTPUT:asad
+       khan
+
+
+
