@@ -1,0 +1,25 @@
+insertAdjacentHTML: The insertAdjacentHTML() method in JavaScript allows you to insert HTML content at a specified position relative to an element. It provides a way to dynamically add or change HTML content around a given element without overwriting its entire content.
+
+The method takes two parameters:
+
+1).Position String:
+
+It specifies where to insert the HTML content in relation to the target element. It can take one of the following values:
+"beforebegin": Inserts the HTML content immediately before the target element.
+"afterbegin": Inserts the HTML content as the first child of the target element.
+"beforeend": Inserts the HTML content as the last child of the target element.
+"afterend": Inserts the HTML content immediately after the target element.
+
+NOTE: Position names are not case sensitive.
+
+2).HTML String:
+
+It is a string containing the HTML content to be inserted.
+EXAMPLE IN CODE FILE.
+
+NODE REMOVAL: This is used to remove a node. There is a method node.remove()
+
+let id1 = document.getElementById("id1")
+id1.remove()
+
+

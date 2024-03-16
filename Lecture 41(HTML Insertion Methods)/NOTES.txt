@@ -1,0 +1,93 @@
+HTML INSERTION METHODS IN DOM:
+
+If we want to insert html elements using javascript we can do like this in simple form.
+HTML :
+<div class="container">
+    <div id="first">This is a div element</div>
+   </div>
+JS:
+let a = document.getElementsByTagName('div')[0]
+a.innerHTML = a.innerHTML + '<h1>I am inserted heading</h1>'
+
+If we want to insert html elements using javascript methods we can do like this.
+INSERTION METHODS:
+
+1). Document.creatElement and AppendChild method:
+
+HTML SAME IN PREVIOUS.
+JS:
+let a = document.getElementsByTagName('div')[0]
+let newdiv = document.createElement('div')
+newdiv.innerHTML = '<h1>CREATE ELEMENT + APPEND</h1>'
+a.appendChild(newdiv)
+
+Here we put a new div in a variable newdiv and in newdiv inner html we add <h1> and then we add this in 'a' which is our main div.
+
+MORE INSERTION METHODS:
+
+1). a.appendChild(): The appendChild() method is specifically designed to append a single node (element) to the end of a list of child nodes for a specified parent node.
+
+2). a.append(): The append() method is specifically designed to append a single node (element) to the end of a list of child nodes for a specified parent node.
+
+DIFFERENCE BW BOTH: appendChild() takes a single argument, which is the node to be appended.
+append() can take multiple arguments, allowing you to append multiple nodes or strings in a single call.
+
+EXAMPLE:a.append() var parent = document.getElementById("parentElement");
+var child = document.getElementById("childElement");
+
+parent.appendChild(child);
+
+EXAMPLE(a.append()): var parent = document.getElementById("parentElement");
+var child1 = document.getElementById("childElement1");
+var child2 = document.getElementById("childElement2");
+
+parent.append(child1, child2);
+
+3). a.prepend(): The prepend() method in JavaScript is used to insert one or more nodes or DOMString (text) at the beginning of the child nodes of a specified parent node. It's the opposite of append(), which adds elements to the end of the child nodes list. (check example in code file).
+
+4). a.before(): The before() method in JavaScript is like a way to add something new right before an existing thing on a webpage. Imagine you have a list of items, and you want to add a new item before the first one. You can use before() to do that.
+
+EXAMPLE: <!-- Your HTML -->
+<ul>
+  <li id="existingElement">First Item</li>
+  <li>Second Item</li>
+  <li>Third Item</li>
+</ul>
+
+<script>
+  // Your JavaScript
+  var newElement = document.createElement("li");
+  newElement.textContent = "New Item";
+
+  var existingElement = document.getElementById("existingElement");
+  existingElement.before(newElement);
+</script>
+
+After running this code, your HTML list will look like:
+
+<ul>
+  <li>New Item</li>
+  <li id="existingElement">First Item</li>
+  <li>Second Item</li>
+  <li>Third Item</li>
+</ul>
+
+5) a.after(): Opposite of a.before()
+
+6). a.replaceWith(): The replaceWith() method in JavaScript is used to replace an element in the DOM (Document Object Model) with another element or set of elements. It removes the specified element and inserts the new content in its place.
+
+EXAMPLE: <!-- Your HTML -->
+<div id="oldElement">This is the old content</div>
+
+<script>
+  // Your JavaScript
+  var newElement = document.createElement("div");
+  newElement.textContent = "This is the new content";
+
+  var oldElement = document.getElementById("oldElement");
+  oldElement.replaceWith(newElement);
+</script>
+
+After running this code, the HTML will be updated:
+
+<div>This is the new content</div>
