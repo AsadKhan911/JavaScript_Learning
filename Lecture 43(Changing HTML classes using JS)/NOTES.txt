@@ -1,0 +1,22 @@
+CLASSNAME & CLASSLIST:
+
+1). CLASSNAME: To set class name using js we use the following syntax.
+HTML: <div id="first" class="yellow text-dark">
+        <span>I am Asad!</span>
+    </div>
+JS: first.className = "red text-dark"
+
+2). CLASSLIST: This function shows us all the classes in a particular element.
+SYNTAX: console.log(first.classList)
+
+If i want to delete a particular class from a classlist of a particular element i can do it with .remove("") method.
+
+first.classList.remove("text-dark")
+
+Similarly if i want to add any class i can use first.classList.add("text-dark") function.
+
+3). .toggle(): The toggle method in the context of classList in the DOM is used to toggle the presence of a class on an element. This means it adds the class if it's not present, and removes it if it is already present. (CHECK EXAMPLE IN CODE FILE).
+
+4) .contains(): To check if the following class exists in a particular element or not.
+
+EXAMPLE: console.log(first.classList.contains("red")) //Returns boolean value true of false.
