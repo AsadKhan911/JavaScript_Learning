@@ -1,0 +1,37 @@
+1). setTimeout(): In JavaScript, setTimeout is a function that allows you to schedule the execution of a specified function or a piece of code after a specified amount of time has elapsed. It is commonly used for delaying the execution of a function or code block.
+
+SYNTAX: let a = setTimeout(() => {
+    alert("I am inside setTimeout")
+}, 4000);
+
+
+SETTIMEOUT FUNTION WITH ARGUMENTS: 
+
+const sum =  (a,b) => {
+    console.log("Yes i am running" + (a+b))
+    a + b
+}
+setTimeout(sum, 1500 , 1 , 2)
+
+-> clearTimeout(a) //it is used to stop the execution of timeout.
+
+2). setTimeinterval(): setInterval is a method in JavaScript that allows you to repeatedly execute a function or code snippet at specified intervals. It takes two parameters: the function to be executed and the interval (in milliseconds) at which the function should be called.
+
+SYNTAX: let c = setInterval(() => {
+    alert("SetInterval")
+}, 2000);
+
+console.log(c)
+
+USE OF IT: Displaying adds on the website even use clicks on the cross button , after some miliseconds.
+
+SETTIMEINTERVAL FUNCTION WITH AURGUMENTS:
+
+const multiply = (a,b) => {
+    alert("Yes I am multiply" + (a*b))
+    a*b
+}
+
+setTimeout(multiply,1500,2,2) //first argument is function , 2nd is delay time , and after that others are value arguments.
+
+-> clearInterval is used to stop setTimeinterval().
