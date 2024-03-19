@@ -1,0 +1,50 @@
+Intro to browser events:
+
+Some Important DOM events are:
+
+1). Mouse events: click , contextmenu(right click), mouseover/mouseout , mousedown/mouseup , mousemove
+
+2). Keyboard events: keydown and keyup
+
+3). form element events: Submit , focus etc
+
+4). Document events: DOM Content Loaded
+
+Some properties used in browser events:-
+
+1). onclick: In JavaScript, the onclick event handler is used to execute a specific piece of code or function when an HTML element is clicked.
+
+2). onmouseenter: The onmouseenter event handler in JavaScript is used to execute a specific piece of code or function when the mouse enters a particular HTML element. It is triggered when the mouse pointer moves over the boundary of the specified element. 
+
+Example: Creating hover effects or initiating actions when the mouse enters a designated area on the webpage.
+
+We can also done onclick or any other property like this aswell.
+
+let a = document.getElementsByClassName("container1")[0]
+a.onclick = () => {
+    alert("This is done by function")
+} 							//Check code file for further clarity.
+
+3). onchange: Fires when the value of an input, select, or textarea element is altered by the user.
+
+Example: Validating and responding to user input changes in form elements dynamically.
+
+4). onsubmit: Occurs when a form is submitted, either by clicking a submit button or pressing Enter in a form field.
+
+Example: Implementing form validation and handling form data submission.
+
+5). onkeydown: Triggers when a key on the keyboard is pressed down.
+
+Example: Capturing user keyboard input to implement keyboard shortcuts or perform specific actions.
+
+6). onload: Fires when a resource (like an image or script) and the entire page have finished loading.
+
+Example: Initializing scripts, setting up the UI, or performing actions after the page and its resources have loaded.
+
+7). onresize: Occurs when the size of the browser window is changed.
+
+Example: Adapting the layout, styles, or content dynamically based on changes in the window size.
+
+8). onscroll: Triggered when the user scrolls the content of an element or the entire page.
+
+Example: Implementing features like infinite scrolling, parallax effects, or lazy loading of content based on scroll position.
