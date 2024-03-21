@@ -1,0 +1,59 @@
+addEventListener: addEventListener is a method that lets you tell an HTML element to listen for a specific type of event (like a click, mouseover, or keypress) and execute a function (or a piece of code) when that event occurs.
+
+SYNTAX: element.addEventListener('eventType', eventHandlerFunction);
+
+// Adding a click event listener to a button
+document.getElementById('myButton').addEventListener('click', function(e) {
+  alert('Button clicked!');
+});
+
+In this example, when the button with the ID 'myButton' is clicked, the function inside addEventListener (the event handler) is executed, showing an alert.
+
+removeEventListener: removeEventListener is a method used to stop listening for a specific type of event on an HTML element. It's useful when you want to detach a previously attached event handler function.
+
+EXAMPLE : let x = function(e) {
+       alert("HELLO1")
+     }
+
+let y =  function(e) {
+       alert("HELLO2")
+     }
+
+//this 'e' in function is needed when we want to access the information about the event happened it is the reference for an event. We can access the information of the event by this 'e' through different methods , written below.
+
+btn.addEventListener('click' , x )
+
+btn.addEventListener('click' , y )
+
+let a = prompt("What is your favourite number")
+a = Number.parseInt(a)
+
+if(a == 2)
+{
+    btn.removeEventListener('click' , x)
+}
+else
+{
+    btn.removeEventListener('click' , y)
+}
+
+In JavaScript event listeners, the parameter e (or sometimes event) is a reference to the event object associated with the triggered event. The event object contains information about the event, such as the type of event, the target element, and additional properties specific to the type of event.
+
+Usage of e (event object):
+Target Element:
+
+e.target: Refers to the element on which the event was triggered.
+Event Type:
+
+e.type: Contains the type of the event (e.g., 'click', 'mouseover').
+Mouse Coordinates:
+
+e.clientX and e.clientY: Provide the horizontal and vertical coordinates of the mouse pointer when the event occurred.
+Key Information (for keyboard events):
+
+e.key: Indicates the key pressed.
+e.keyCode (or e.which): Represents the numeric code of the pressed key.
+
+Preventing Default Behavior:
+e.preventDefault(): Used to prevent the default action associated with the event (e.g., preventing a form from submitting).
+
