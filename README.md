@@ -38,4 +38,4 @@ Happy learning! 😊
 
 ## How to Contribute
 
-If you'd like to contribute, feel free to open an issue, suggest improvements, or create a pull request. Let's build a collaborative learning space!
+If you'd like to contribute feel free to open an issue, suggest improvements, or create a pull request. Let's build a collaborative learning space!
