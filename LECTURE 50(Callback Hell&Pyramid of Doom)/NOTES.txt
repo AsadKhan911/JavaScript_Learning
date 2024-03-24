@@ -1,0 +1,19 @@
+CALLBACK HELL & PYRAMID OF DOOM: Callback hell, also known as the pyramid of doom, refers to a situation in asynchronous programming where multiple nested callbacks make the code difficult to read, understand, and maintain. This occurs when you have a series of asynchronous operations (such as callbacks or promises) that depend on the results of each other. As the number of nested callbacks increases, the code indentation forms a pyramid-like shape, leading to the term "pyramid of doom.
+
+EXAMPLE: 
+// Nested callbacks (Callback Hell or Pyramid of Doom)
+asyncOperation1(function(result1) {
+  asyncOperation2(result1, function(result2) {
+    asyncOperation3(result2, function(result3) {
+      // More nested callbacks...
+      asyncOperation4(result3, function(result4) {
+        // Final callback
+        console.log("Final result:", result4);
+      });
+    });
+  });
+});
+
+In this example, each asynchronous operation depends on the result of the previous one, leading to deeply nested callbacks. This can make the code harder to read, maintain, and debug. It's also prone to errors, and it becomes challenging to manage the flow of control.
+
+To address callback hell, developers often use techniques such as promises, async/await syntax (introduced in ECMAScript 2017), or other control flow libraries to make the code more readable and maintainable. These alternatives aim to flatten the structure and improve the overall code organization.
