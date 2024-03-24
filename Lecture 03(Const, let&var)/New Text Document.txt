@@ -1,0 +1,38 @@
+Part 1: Group software project portfolio.
+
+Working as a team,this coursework will allow you to demonstrate your ability to analysea problem and break this into requirements that you will model , prototype and develop a software solution for. This will be carried out using an agile approach to software engineering/development.
+
+Design, Develop and deploy a digital service or game related to your life as a student on or off campus.
+Game version(for Students on computer science for games development):
+Consider all aspects of your life and around camput. What aspects or situations would be suited to desigining a game around? The game can be for entertainment, creating social connections or more alligned to helping you with your studies. The game can be team-based or for individual players.
+
+Computer Science/Software Engineering Version:
+Cosnider all aspects of your life as a student. What aspects could be improved through the introduction of a digital service. Note that sometimes the instruction of a poorly designed digital service can make the experience worse,and some successful digital services rely on face-to-face interactions in additio to digial support.
+
+ideas below are to get you thinking - you dont need to limit yourself to these/
+COnsider your life as a student.
+Location/situation:
+on campus
+off campus
+at work
+at play
+social
+personal
+in halls
+
+Activity:
+lecture 
+commuting
+eating
+Time of year:
+Induction
+exams
+holiday
+current non digital touch points:
+HUB
+support services
+rooms/labs
+Coursework requirementS:
+You will work in your teams and follow an agile methodology(scrum)to repeatedly deliver iterations of your solution.
+There is no specified implementtion platform as this may vary between projects, but must be agreed between the teams and the module leader.
+

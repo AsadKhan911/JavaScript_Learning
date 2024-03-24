@@ -1,0 +1,88 @@
+Synchronous Programming: In synchronous programming, tasks are executed one after the other in a sequential manner. Each task must wait for the previous one to complete before moving on to the next.
+It's like standing in a queue, where each person waits for the person in front to finish before they can proceed.
+Synchronous code is straightforward and easy to read, but it can lead to blocking behavior. If one task takes a long time, it will delay the execution of subsequent tasks.
+
+EXAMPLE: 
+console.log("Task 1");
+console.log("Task 2");
+console.log("Task 3");
+
+In this example, "Task 2" won't be executed until "Task 1" completes, and "Task 3" won't start until "Task 2" is done.
+
+Asynchronous Programming: In asynchronous programming, tasks can be started, and the program doesn't need to wait for them to finish before moving on to the next task. It allows the program to continue with other tasks while waiting for time-consuming operations to complete.
+It's like standing in a queue but being able to do other things while waiting for your turn.
+
+EXAMPLE:
+console.log("Task 1");
+
+setTimeout(function() {
+  console.log("Task 2");
+}, 2000); // Wait for 2 seconds
+
+console.log("Task 3");
+
+In this example, "Task 2" is scheduled to run after a 2-second delay, during which "Task 3" is executed without waiting for "Task 2" to complete.
+
+Asynchronous programming is crucial for handling operations like network requests, file I/O, or any task that may take time. JavaScript provides mechanisms like callbacks, Promises, and async/await to work with asynchronous code effectively.
+
+CALLBACK: A callback in JavaScript is a function that is passed as an argument to another function and is intended to be executed after the completion of a particular task or event. The primary purpose of callbacks is to manage asynchronous operations and control the flow of code.
+
+Callbacks are commonly used in asynchronous operations, where certain tasks take time to complete, such as reading a file, making a network request, or handling user input. Instead of blocking the execution of code while waiting for these tasks to finish, callbacks allow you to specify what should happen after the task is complete.
+Event Handling: Callbacks are often used in event-driven programming. For example, you can define a callback function to execute when a button is clicked, a file is loaded, or a timer expires.
+
+EXAMPLE:
+function loadScript(src , callback) {
+    let script = document.createElement("script");
+    script.src = src;
+    script.onload = function () {
+        console.log("Script loaded with src:" + src)
+        callback();
+    }
+    document.body.appendChild(script);
+}
+
+function hello () 
+{
+    console.log("HELLO")
+}
+function bye ()
+{
+    console.log("BYE")
+}
+
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ,hello)
+
+Here callback first given as a parameter and inside loadScript() there is another function in which callback() is called. 
+After that two functions hello and bye are made which are the definition of callback functions
+At last we load the loadScript() function in which one parameter is src and second parameter is callback function which is hello.
+
+-> We can also give parameter to the callback function, you can see its example in code file.
+
+HANDLING ERRORS: We can handle callback errors by suppluing error argument like this:
+function loadScript(src , callback) {
+    let script = document.createElement("script");
+    script.src = src;
+    script.onload = function () {
+        console.log("Script loaded with src:" + src)
+        callback(src);
+    }
+    script.onerror = function() {
+        console.log("Error loading script with src:"+src)
+    }
+    document.body.appendChild(script);
+}
+
+function hello (src) 
+{
+    console.log("HELLO" + src)
+}
+function bye (src)
+{
+    console.log("BYE" + src)
+}
+
+loadScript("https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ,hello)
+
+-> We can use script.onerror and pass a function to it whatever we define in it. so when error comes , if script src is not valid it will execute this function.
+-> We can also give error as a parameter to call back functions , so that when error occours it will use the error parameter otherwise the second parameter.
+
