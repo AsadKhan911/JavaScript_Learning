@@ -1,0 +1,89 @@
+PROMISES IN JS:
+
+In JavaScript, a promise is an object that represents the eventual completion or failure of an asynchronous operation. It's a way to handle operations that might take some time to complete, such as fetching data from a server, reading a file, or any other asynchronous task.
+
+The concept of a promise can be explained in easy words using a real-world analogy. Imagine you order food online, and the delivery service gives you a promise. The promise says that your food will be delivered either successfully or not, and it provides a way for you to handle the outcome.
+
+In JavaScript, a promise has three states:
+
+Pending: The initial state when the asynchronous operation is still in progress.
+Fulfilled: The operation completed successfully, and the promise returns a result.
+Rejected: The operation encountered an error, and the promise returns a reason for the failure.
+
+EXAMPLE: 
+// Creating a promise
+let myPromise = new Promise((resolve, reject) => {
+  // Simulating an asynchronous operation (e.g., fetching data)
+  let isSuccess = true; // Change to false to simulate rejection
+
+  if (isSuccess) {
+    resolve("Operation completed successfully!"); // Fulfill the promise
+  } else {
+    reject("Oops! Something went wrong."); // Reject the promise
+  }
+});
+
+// Handling the promise
+myPromise
+  .then((result) => {
+    console.log("Success:", result); // Executed if the promise is fulfilled
+  })
+  .catch((error) => {
+    console.log("Error:", error); // Executed if the promise is rejected
+  });
+In this example, if the asynchronous operation is successful, the resolve function is called, and the then block is executed. If there's an error, the reject function is called, and the catch block is executed. Promises provide a cleaner and more structured way to handle asynchronous code compared to traditional callbacks.
+
+IN PROMISES WE HAVE 2 THINGS:-
+1). STATE
+2). RESULT
+
+In the context of promises in JavaScript, the concepts of "state" and "result" are fundamental aspects that help manage asynchronous operations more effectively.
+
+State:
+
+A promise can exist in one of three states: pending, fulfilled, or rejected.
+Pending: The initial state when the asynchronous operation is still in progress, and the final result is not available yet.
+Fulfilled: The state when the asynchronous operation is successfully completed, and the promise has a result.
+Rejected: The state when the asynchronous operation encounters an error, and the promise has a reason for the failure.
+
+// Example of promise states
+let myPromise = new Promise((resolve, reject) => {
+  // ...
+});
+
+// The state of the promise can be checked using the `then` and `catch` methods
+myPromise.then(
+  (result) => {
+    console.log("Fulfilled state:", result);
+  },
+  (error) => {
+    console.log("Rejected state:", error);
+  }
+);
+
+2). Result:
+
+The "result" of a promise is the value that is passed to the resolve or reject function when the asynchronous operation completes.
+In the fulfilled state, the result represents the successful outcome of the operation.
+In the rejected state, the result represents the reason for the failure.
+
+let myPromise = new Promise((resolve, reject) => {
+  let isSuccess = true; // Change to false to simulate rejection
+
+  if (isSuccess) {
+    resolve("Operation completed successfully!"); // Fulfill the promise with the result
+  } else {
+    reject("Oops! Something went wrong."); // Reject the promise with the reason
+  }
+});
+
+// Handling the promise and accessing the result
+myPromise.then(
+  (result) => {
+    console.log("Success:", result); // Result in the fulfilled state
+  },
+  (error) => {
+    console.log("Error:", error); // Result in the rejected state
+  }
+);
+Understanding the state and result of promises allows developers to handle asynchronous code more effectively. It provides a structured way to deal with success and error outcomes, making it easier to manage complex asynchronous flows in a program.
