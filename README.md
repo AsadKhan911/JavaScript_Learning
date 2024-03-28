@@ -34,7 +34,7 @@ Feel free to clone or fork this repository to access the learning materials. Eac
 2. Navigate to the folder of your chosen topic.
 3. Explore the notes and examples.
 
-Happy learning! 😊
+Happy learning!😊
 
 ## How to Contribute
 
