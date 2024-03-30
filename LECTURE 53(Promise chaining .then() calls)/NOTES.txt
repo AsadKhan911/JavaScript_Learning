@@ -1,0 +1,31 @@
+PROMISE CHAINING: Promise chaining is a way to handle multiple asynchronous operations in a sequential and readable manner using JavaScript promises. In easy words, it's like telling your program to do one thing after another, ensuring that each step is completed before moving on to the next.
+
+Here's a simple explanation:
+
+Imagine you have a series of tasks to do, and each task takes some time. Instead of waiting for each task to finish before starting the next one, you can use promises to structure your code in a way that expresses the sequence of actions.
+
+EXAMPLE:
+
+let p1 = new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        console.log("Resolved after 2 seconds")
+        resolve(10)
+    }, 2000);
+})
+
+p1.then((value)=>{
+    console.log(value)
+    let p2 = new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            resolve("Promise 2")
+        }, 2000);
+    })
+    return p2
+}).then((value)=>{ //now it contains the value of p2 promise
+    console.log("2nd last "+value)
+    return 2 //it donot returns a promise but when we will use .then after it , it will consider it as a promise and gives its value to .then() parameter
+}).then((value)=>{
+    console.log("LAST and value is:" +value)
+})
+
+-> This is a better approach then callbacks to avaoid callback hell.

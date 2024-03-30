@@ -1,0 +1,105 @@
+Asynchronous Operations:
+
+Functions: Traditional functions in JavaScript are synchronous, meaning they execute one line of code at a time, and the program waits for each line to complete before moving on to the next.
+
+Promises: Promises are designed to handle asynchronous operations. They allow you to work with values that may not be available immediately, such as data fetching, file reading, or any other non-blocking task.
+
+Handling Results:
+
+Functions: The result of a function is usually returned directly or passed to a callback function.
+
+Promises: Promises have a more structured way of handling results. They can be in one of three states: pending, fulfilled, or rejected. The result is typically handled using the .then() method for successful completion and the .catch() method for errors.
+
+PARALLEL EXECUTION OF CODE:
+
+SUPPOSE WE HAVE THIS CODE
+
+let p1 = new Promise((resolve,reject) => {
+    console.log("Promise1 is pending")
+    setTimeout(() => {
+        console.log("I am a promise1 and I am filfulled")
+        resolve(true)
+    }, 4000);
+})
+
+let p2 = new Promise((resolve,reject) => {
+    console.log("Promise2 is pending")
+    setTimeout(() => {
+        console.log("I am a promise2 and I am rejected")
+        reject(new Error("I am an Error"))
+    }, 4000);
+})
+
+In this code we have 2 promises , but the main purpose of promises is parallel execution means the next will not wait for the execution of second to get completed. After 4 seconds both result will be show whether they are rejected or resolved. This is known as parallel execution.
+
+QUESTION: what if there are not resolve and reject parameters in promise then which issues might be created?
+
+ANSWER: resolve is used to fulfill the promise, and the value passed to it becomes the result of the promise. reject is used to reject the promise, and the value passed to it becomes the reason for rejection. This allows you to handle the results or errors in a standardized way.
+
+NOW COMES THE .then() and .catch() functions:-
+
+In JavaScript, .then() and .catch() are methods used with promises to handle the results of asynchronous operations in a more structured and readable way.
+
+.then():
+
+The .then() method is used to handle the successful resolution of a promise. It takes a callback function as an argument, and this function is executed when the promise is successfully fulfilled. Basically jo value bhe resolve function pass krega wo .then((parameter){}) k andar jo bhe parameter hoga usko pass hojaegi
+
+EXAMPLE:
+
+let p1 = new Promise((resolve,reject) => {
+    console.log("Promise1 is pending")
+    setTimeout(() => {
+        console.log("I am a promise1 and I am filfulled")
+        resolve(true)
+    }, 4000);
+})
+
+p1.then((value)=>{
+    console.log(value)
+})
+
+Now the value of resolve which is true , will be stored in "value" parameter in p1.then((value)) which is a call back function.
+
+Same goes for .catch() but little difference.
+
+catch(): The .catch() method is used to handle any errors or rejections that may occur during the promise's execution. It takes a callback function as an argument, and this function is executed when the promise is rejected.
+
+let p1 = new Promise((resolve,reject) => {
+    console.log("Promise1 is pending")
+    setTimeout(() => { //set time is used to just show when we wait for some data to come then how it behaves.
+        console.log("I am a promise1 and I am filfulled")
+        resolve("P1 is filfulled") 
+    }, 4000);
+})
+
+let p2 = new Promise((resolve,reject) => {
+    console.log("Promise2 is pending")
+    setTimeout(() => {
+        // console.log("I am a promise2 and I am rejected")
+        reject(new Error("error in p2"))
+    }, 4000);
+})
+
+p1.then((value)=>{
+    console.log(value)
+})
+
+p2.catch((error)=>{ //now there will not be error in console in red , as we catch the error.
+    console.log(error)
+})
+
+-> In this example the string in p1 resolve "I am promise1 and I am filfulled" will be pass to .then callback function parameter which is value.
+-> And then new Error("error in p2") in reject will be pass to error value in p2.catch() 
+
+We can also write .then() & .catch() combinely like this:
+
+p1.then((value)=>{
+    console.log(value)
+},
+(error)=>{
+    console.log(error)
+})
+
+
+
+

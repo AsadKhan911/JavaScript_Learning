@@ -1,0 +1,23 @@
+1). Async: We can make any function async by just writting async before it.
+
+-> We can make any function async and await promises inside the fucntion.
+
+-> An async function always returns a promise and other values are wrapped in a promise automatically means in function with async if we just return like this.....return 7 , this doesnot mean it is only returning a single value 7 , it means it is returning a resolve(7) , means it is returning a promise. whether we return promise manually inside it or not. In simple words whatever will be returned from an async function will be a promise.
+
+-> Suppose we have a function named "function_1" and it is written as an async function
+
+-> So we can do like this function_1.then((value)=>{}) , because function_1 is returning a promise.
+
+-> So async ensures that function will returns a promise and wraps non promises in it(mean whatever is returned will be wrapped as a promise).
+
+-> Different async function runs parallely.
+
+2). Await: Await is also a keyword we used inside Async function to stop the execution of a function until the piece of code(promise) with await gets filfulled , remember it will not stop the execution of the entire program but the inside of the function where awaits is being used.
+
+-> This is useful when we want that one certain task will run , after completion of it the second task will run and then third and so on..
+
+-> This can be a good approach to use it instead of using promise chaining.
+
+suppose we have 3 variables a , b and c and for c we need the value of a but suppose without await var a ,b,c will run parallely then how will be the c solved? With await we waits for the filfullment of each variable or promise when that filfulled then we moves to the next one. So when a gets filfulled then we run b then c to get the exact value we want.
+
+-> Suppose we want a value to be solved that we have to use in the next variable if they will run parallely will not get the accurate value so with await the execution will be stopped until we get the value of previous one , it will make the program and values accurate.

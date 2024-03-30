@@ -1,0 +1,27 @@
+THE PROMISE API: It is nothing but are some methods which we can use with promises to perform certain tasks.
+
+METHODS:-
+
+1). promise.all(): This function is used to show the result of all promises at the same time. Suppose we have 3 promises one is taking 1 sec to resolve,second is taking 2 seconds and third is taking 3 seconds but we want the results of all to show when all will be resolved , so this function is used to do this task.
+
+NOTE: Promise.all() runs when all the promises must be resolved , but when if any single promise is being rejected then we have another function to deal with.
+
+2). promise.allSettled(): It works same like promise.all() but the key difference is it show the result of rejected promise aswell resolved promises.
+
+3). promise.race(): It shows the result for which is resolved first. It only works with resolved promises.
+
+4). promise.any(): It shows the result for which is resolved first and ignore the rejected ones means if promise 1 is filfulling first but is being rejected , it looks for the second most early done promise to be resolved and prints that one.
+
+5). promise.resolved(): Creates a new promise that is immediately resolved with the given value.
+It's handy when you want to create a promise that represents a successful result.
+For example, if you have a function that should return a promise, and you already have the result available synchronously, you can use Promise.resolve() to create a resolved promise with that value.(It just directly give you a resolved promise)
+
+const resolvedPromise = Promise.resolve('This promise is resolved.');
+
+6). Promise.reject(reason): Creates a new promise that is immediately rejected with the given reason.
+Useful when you want to create a promise that represents a failure or an error condition.
+For example, if you have an asynchronous operation that encounters an error, you can use Promise.reject() to create a rejected promise with the specific error information.(It just directly give you a rejected promise)
+
+const rejectedPromise = Promise.reject('This promise is rejected.');
+
+In summary, these methods are helpful for creating promises with predefined outcomes (resolved or rejected), and they can be useful in scenarios where you need to work with promises even when the asynchronous operation has already been completed or has encountered an error.
