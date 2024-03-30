@@ -18,7 +18,7 @@ Explore JavaScript through various topics, including:
 
 ## How to Use
 
-Feel free to clone or fork this repository to access the learning materials. Each folder contains notes, examples, and resources related to the specific topic. Collaborate, share your insights, and let's grow together!
+Feel free to clone or fork this repository to access the learning materials. Each folder contains notes, examples, and resources related to the specific topic. Collaborate, share your insights,and let's grow together!
 
 ## Folder Structure
 
