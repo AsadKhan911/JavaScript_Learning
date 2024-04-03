@@ -1,4 +1,4 @@
-ki# JavaScript Learning Repository 🚀
+if ki# JavaScript Learning Repository 🚀
 
 Hey there! 👋 I'm excited to share my JavaScript learning journey with you. I've organized my learning into a collaborative repository.
 
