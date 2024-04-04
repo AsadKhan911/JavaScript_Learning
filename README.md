@@ -32,7 +32,7 @@ Feel free to clone or fork this repository to access the learning materials. Eac
 
 1. Clone or fork the repository.
 2. Navigate to the folder of your chosen topic.
-3. Explore the notes and examples.
+3. Explore the notes and examples
 
 Happy learning!😊
 
