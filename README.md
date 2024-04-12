@@ -26,7 +26,7 @@ Feel free to clone or fork this repository to access the learning materials. Eac
 - `02_DOM_Manipulation_and_Events`
 - `03_Async_JavaScript`
 - `04_Modern_JS_Features`
-- ......
+- .......
 
 ## Getting Started
 
