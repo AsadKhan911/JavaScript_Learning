@@ -1,0 +1,42 @@
+ERROR OBJECTS: When we are using try and catch, the error in catch as a parameter catch(error) , is an object. This obbject has the following properties.
+
+1). error.name: It is used to print the name of the error such as syntax error,refrence error etc.
+
+-> It is helpful when we need to know the name of the error to further perfrom the tasks based on the error type or name.
+
+2) error.message: It is used to print the error in human-readable description.
+
+3).error.stack: The error.stack property in JavaScript provides a string representing the stack trace of the error. The stack trace contains information about the sequence of function calls that led to the point where the error occurred. It's a powerful tool for debugging, as it helps you trace the execution path and identify the source of the error.
+
+CUSTOM ERRORS: Creating custom errors allows developers to give more meaningful names to errors based on the context of their application. This enhances code readability and makes it easier to understand the nature of the error.
+
+EXAMPLE: 
+
+try {
+    throw new Error("This is thrown error")
+} catch (error) {
+    console.log(error.name)
+    console.log(error.message)
+}
+Now the error will be "this is a thrown error"
+
+-> Refrence Error: try {
+    throw new ReferenceError("This is thrown error")
+} catch (error) {
+    console.log(error.name)
+    console.log(error.message)
+}
+
+This will print Refrence error in error.name
+
+-> ONE MORE EXAMPLE TO CLARIFY WHY WE USE CUSTOM ERRORS:
+
+try {
+    // Some code that may encounter an unexpected condition
+    if (someCondition) {
+        throw new Error("Unexpected condition occurred");
+    }
+} catch (error) {
+    console.error("An error occurred:", error.message);
+    // Additional error handling code
+}
