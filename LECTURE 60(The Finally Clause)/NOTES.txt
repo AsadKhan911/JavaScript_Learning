@@ -1,0 +1,12 @@
+FINALLY CLAUSE: The finally clause is the last clause used after the try and catch block
+
+WORKING: Whether there is an error in try or there is an error in catch finally will always run.
+
+PURPOSE: Suppose we have an error in try , but also we have a syntax or refrence error in catch block code aswell in such conditions , finally is used as a final clause.
+
+If there is a return in try, finally is executed just before the control returns to the outer code.
+Finally will run in any case. Such as we have to close the file in any way, OR Write in file any way, OR Inform administrator in any way. ETC
+
+SCENARIO 1:  Imagine you are writing a script in JavaScript that needs to read data from a file, perform some operations, and then close the file. The finally block can be used to ensure that the file is closed properly, regardless of whether an exception occurs during the file reading or data processing.
+
+SCENARIO 2: Another scenario where the finally clause can be useful is in database operations. Consider a situation where you're interacting with a database and need to ensure that the database connection is closed properly, whether the operations were successful or not. 
