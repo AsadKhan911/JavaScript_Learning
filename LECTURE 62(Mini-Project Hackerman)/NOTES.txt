@@ -1,0 +1,9 @@
+PRACTICE QUESTIONS:
+
+Q1: Write a javscript program to load a JavaScript file in a browser using Promises. Use .then() to display an alert when the load is complete.
+
+Q2: Write the same program from previous question and use async/await syntax.
+
+Q3: Create a promise which rejects after 3 seconds use an async/await to get its value. Use a try catch to handle its error.
+
+Q4: Write a program using Promise.all() inside an async/await to await 3 promises. Compare its reuslts with the case where we await these promises one by one.
