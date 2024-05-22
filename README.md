@@ -14,7 +14,7 @@ Explore JavaScript through various topics, including:
 - DOM Manipulation and Events
 - Asynchronous JavaScript (Promises, Async/Await)
 - Modern JS Features (ES6+)
-- And much more
+- And much moree
 
 ## How to Use?
 
